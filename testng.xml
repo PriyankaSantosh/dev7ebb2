@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+
+<classes>
+<class name="DisableSerologyVerifaction.DsCSVb" />
+<class name="DisableSerologyVerifaction.DsCVbS" />
+<class name="DisableSerologyVerifaction.DsSCVb" />
+<class name="DisableSerologyVerifaction.DsVbCS" />
+<class name="DisableSerologyVerifaction.DsVbSC" />
+<class name="DisableVeifyBg.CSVs" />
+<class name="DisableVeifyBg.SVsC" />
+<class name="DonorPage.BlankFields" />
+<class name="DonorPage.BP" />
+<class name="DonorPage.CheckEligibleage" />
+<class name="DonorPage.CSVsVb" />
+<class name="DonorPage.CVbSVs" />
+<class name="DonorPage.Deferral" />
+<class name="DonorPage.DisableNonBloodPartial" />
+<class name="DonorPage.Donor" />
+<class name="DonorPage.EnableBLoodVerify" />
+<class name="DonorPage.Futuredateofcollection" />
+<class name="DonorPage.noBloodBag" />
+<class name="DonorPage.NoDoc" />
+<class name="DonorPage.NonBlooodPartial" />
+<class name="DonorPage.PartialDonor" />
+<class name="DonorPage.SameReg" />
+<class name="DonorPage.serologyAsPositive" />
+<class name="DonorPage.SerologyTechBlank" />
+<class name="DonorPage.SetBloodBagReg" />
+<class name="DonorPage.SVsCVb" />
+<class name="DonorPage.SVsVbC" />
+<class name="DonorPage.VbCSVs" />
+<class name="DonorPage.VbSVsC" />
+<class name="DonorPage.VerifyBloodGroup" />
+<class name="PatientManagement.createPatient" />
+<class name="PatientManagement.Crossmatch" />
+<class name="PatientManagement.CrossmatchmismachBlood" />
+<class name="PatientManagement.CrossmatchWithExpired" />
+<class name="PatientManagement.NameBlank" />
+<class name="Update.EndToEnd" />
+<class name="Update.UpdateSerology"/>
+</classes>
+  </test> 
+</suite>
