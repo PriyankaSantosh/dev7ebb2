@@ -180,9 +180,9 @@ public void noBloodBag()
 				
 
 
-				WebElement ele21 = driver.findElement(By.xpath("//a[text()='Create Components']"));
-				JavascriptExecutor executor21 = (JavascriptExecutor)driver;
-				executor21.executeScript("arguments[0].click();", ele21);
+					WebElement ele21 = driver.findElement(By.xpath("//a[text()='Create Components']"));
+					JavascriptExecutor executor21 = (JavascriptExecutor)driver;
+					executor21.executeScript("arguments[0].click();", ele21);
 
 				//driver.findElement(By.xpath("//a[text()='Create Components']")).click();
 

@@ -19,7 +19,7 @@ public class BlankFields {
 		}
 	WebDriver driver=new ChromeDriver();
 @Test
-public void BlankFields()
+public void BlankFields() throws Exception
 {
 	
 
@@ -29,7 +29,7 @@ public void BlankFields()
 		//public static void main(String[] args) throws InterruptedException {
 			//WebDriver driver=new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.get("http://dev.ebloodbanking.com/");
+			driver.get("http://dev8.ebloodbanking.com/");
 			driver.manage().window().maximize();
 			driver.findElement(By.id("edit-name")).sendKeys("test_admin");
 			driver.findElement(By.id("edit-pass")).sendKeys("test_admin6767!");
@@ -101,7 +101,7 @@ public void BlankFields()
 			executor1.executeScript("arguments[0].click();", ele1);
 
 			driver.findElement(By.xpath("//select[@id='edit-field-donor-doctor-und']")).click();
-			driver.findElement(By.xpath("//option[@value='4973']")).click();
+			driver.findElement(By.xpath("  //option[text()='  TestDoctor ']")).click();
 
 
 			//driver.findElement(By.xpath("//input[@id='edit-field-weight-und-0-value']")).sendKeys("45");//weight
@@ -133,23 +133,18 @@ public void BlankFields()
 			driver.findElement(By.xpath("//input[@id='edit-field-batch-no-und-0-value']")).sendKeys("65");
 			driver.findElement(By.xpath("//input[@id='edit-field-donor-segment-number-und-0-value']")).sendKeys("65");
 
-			driver.manage().timeouts().implicitlyWait(90,TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
 
-			driver.findElement(By.xpath("//select[@id='edit-field-type-of-bag-und']")).click();
-			driver.findElement(By.xpath("//option[@value='5074']")).click();
+			driver.findElement(By.xpath("//div[@id='edit_field_type_of_bag_und_chosen']")).click();
+			driver.findElement(By.xpath(" //li[text()='  Double 450ml CPDA ']")).click();
 
-			driver.manage().timeouts().implicitlyWait(90,TimeUnit.SECONDS);
-
-
-			driver.findElement(By.xpath("//select[@id='edit-field-components-to-be-prepared-und']")).click();
-			driver.findElement(By.xpath("//option[text()='PC, FFP']")).click();
-
-			driver.manage().timeouts().implicitlyWait(90,TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 
 
-			driver.findElement(By.xpath("//select[@id='edit-field-er-technician-und']")).click();
-			driver.findElement(By.xpath("(//option[@value='4973'])[1]")).click();
+
+			driver.findElement(By.xpath("//select[@id='edit-field-components-to-be-prepared-und--2']")).click();
+			driver.findElement(By.xpath("//option[text()='PC, FFP, Plt']")).click();
 
 			WebElement ele11 = driver.findElement(By.id("edit-submit"));
 			JavascriptExecutor executor11 = (JavascriptExecutor)driver;

@@ -27,6 +27,7 @@ public class BP {
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				driver.get("http://dev.ebloodbanking.com/");
 				driver.manage().window().maximize();
+				driver.navigate().refresh();
 				driver.findElement(By.id("edit-name")).sendKeys("test_admin");
 				driver.findElement(By.id("edit-pass")).sendKeys("test_admin6767!");
 				driver.findElement(By.id("edit-submit")).click();
